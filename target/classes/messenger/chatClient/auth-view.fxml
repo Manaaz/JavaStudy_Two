@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="320.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="messenger.chatClient.controllers.AuthController">
+    <children>
+        <TextField fx:id="loginField" layoutX="161.0" layoutY="60.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="75.0">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </TextField>
+        <PasswordField fx:id="passwordField" layoutX="161.0" layoutY="159.0" onAction="#checkAuth" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="165.0">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </PasswordField>
+        <Label layoutX="28.0" layoutY="68.0" text="Логин" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="75.0">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="28.0" layoutY="167.0" text="Пароль" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="165.0">
+            <font>
+                <Font size="24.0" />
+            </font>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+        </Label>
+        <Button mnemonicParsing="false" onAction="#checkAuth" text="Авторизация" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" text="Вход в систему:" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
